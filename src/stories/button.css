@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(../tokens.css);
+
+
+*{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: max-content;
+  height: 40px;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+  padding-left: var(--s);
+  padding-right: var(--s);
+  transition: all .3s ease-in-out;
+}
+
+.button--primary:hover{
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.15);
+}
+
+.button--primary:active{
+  background-color: var(--blue-hover);
+  box-shadow: none;
+}
+
+.noShow > i{
+  display: none;
+}
+
+.button--primary{
+  background-color: var(--blue);
+  font-weight: bold;
+  color: var(--white);
+}
+
+.button--secondary{
+  border: 2px solid var(--blue);
+  background-color: transparent;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.button--secondary:hover{
+  border: 2px solid var(--blue-hover);
+  color: var(--blue-hover);
+  background-color: var(--blue-opactiy);
+}
+
+.button--secondary:active{
+  border: 2px solid var(--blue-hover);
+  color: var(--blue-hover);
+  background-color: var(--blue-hover-opacity);
+}
+
+.button--text{
+  background-color: transparent;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.button--text:hover{
+  background-color: var(--blue-opactiy);
+}
+
+.button--text:active{
+  background-color: transparent;
+  color: var(--blue-hover);
+}

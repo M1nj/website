@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --blue-opactiy: #1e8fff27;
+    --blue: #1e90ff;
+    --blue-hover: #187fe7;
+    --blue-hover-opacity: #1880e739;
+    --white: #ffffff;
+    --black: #000000;
+    --grey-100: #efefef;
+    --grey-200: #d7d7d7;
+    --grey-300: #bebebe;
+    --grey-400: #a6a6a6;
+    --grey-500: #818181;
+    --green: #ccf5cf;
+    --green-opacity:#ccf5cf40;
+    --pink:#FFC0F1;
+    --pink-opacity:#FFC0F140;
+    --xs: 0.5rem;
+    --s: 1rem;
+    --m: 3rem;
+    --l: 5rem;
+    --xl: 7rem;
+    --xxl: 10rem;
+  }
+.blue{
+    background-color: var(--blue);
+}
+.blue:hover{
+    box-shadow: 10px 10px 43px 0px var(--blue);
+}
+.black{
+    background-color: var(--black);
+}
+.black:hover{
+    box-shadow: 10px 10px 43px 0px var(--black);
+}
+.green{
+    background-color: var(--green);
+}
+.green:hover{
+    box-shadow: 10px 10px 43px 0px var(--green);
+}
+.pink{
+    background-color: var(--pink);
+}
+.pink:hover{
+    box-shadow: 10px 10px 43px 0px var(--pink);
+}
+.white{
+    color: var(--white);
+}
+.grey-100{
+    background-color: var(--grey-100);
+}
+.grey-100:hover{
+    box-shadow: 10px 10px 43px 0px var(--grey-100);
+}
+.grey-200{
+    background-color: var(--grey-200);
+}
+.grey-200:hover{
+    box-shadow: 10px 10px 43px 0px var(--grey-200);
+}
