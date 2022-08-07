@@ -56,6 +56,10 @@ form{
     margin-bottom: 8px;
 }
 
+input:focus-visible{
+   outline-color: var(--blue)!important;
+}
+
 .inputError{
     color: red;
 }

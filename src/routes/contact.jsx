@@ -107,7 +107,7 @@ export default function Contact() {
               <p>Feel free to send me a message for a new project idea or just say hi at benjamin.caillet.ux@icloud.com.</p>
             </div>
         </div>
-        <SignupForm></SignupForm>
+        <SignupForm/>
         <Outlet/>
       </div>
     );
