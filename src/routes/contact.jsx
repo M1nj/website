@@ -1,33 +1,23 @@
-
-import { Title } from 'react-head';
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import './css/contact.css';
 import { Button } from '../stories/Button';
+import { collection, addDoc } from "firebase/firestore"; 
+import { db } from "../firebase";
 
-const validate = values => {
-  const errors = {};
-  if (!values.firstName) {
-    errors.firstName = 'Required';
-  } else if (values.firstName.length > 15) {
-    errors.firstName = 'Must be 15 characters or less';
+const addContact = async (values) => {
+  try {
+    const docRef = await addDoc(collection(db, "contact"), {
+      firstName: values.firstName,
+      lastName: values.lastName,
+      email: values.email
+    });
+    console.log("Document written with ID: ", docRef.id);
+  } catch (e) {
+    console.error("Error adding document: ", e);
   }
-
-  if (!values.lastName) {
-    errors.lastName = 'Required';
-  } else if (values.lastName.length > 20) {
-    errors.lastName = 'Must be 20 characters or less';
-  }
-
-  if (!values.email) {
-    errors.email = 'Required';
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = 'Invalid email address';
-  }
-
-  return errors;
-};
+}
 
 const SignupForm = () => {
 
@@ -46,8 +36,10 @@ const SignupForm = () => {
         .required('Required'),
       email: Yup.string().email('Invalid email address').required('Please provide an email address'),
     }),
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+
+    onSubmit: (values,{resetForm}) => {
+      addContact(values);
+      resetForm();
     },
   });
   return (

@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
 
-
-export const Button = ({ style, label, ...props }) => {
+// pour le type, ce qu'on a fait c'est ternary operator
+export const Button = ({ style, label, type, ...props }) => {
   return (
-    <button  className={['button', `button--${style}`].join(' ')}>
+    <button type={type='submit'?'submit':'button'} className={['button', `button--${style}`].join(' ')}>
       {[`${label}`]}
     </button>
   )
