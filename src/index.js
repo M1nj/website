@@ -1,30 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 import {
   BrowserRouter,
   Routes,
   Route,
+  Link,
 } from "react-router-dom";
 import Contact from "./routes/contact";
 import Naturewise from './routes/projects/naturewise';
 import About from './routes/about';
+import { Header } from './stories/Header';
+import { Card } from './stories/Card';
 
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
+export default function Appl() {
+  return (
+<React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route index element={<App />} />
-        <Route path="routes/contact" element={<Contact />} />
-        <Route path="routes/about" element={<About />} />
-        <Route path="routes/project/naturewise" element={<Naturewise />} />
+        <Route path="/" element={<Header />}>
+          <Route index element={<App />} />
+          <Route path="routes/contact" element={<Contact />} />
+          <Route path="routes/about" element={<About />} />
+          <Route path="routes/project/naturewise" element={<Naturewise />} />
+      </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
+    );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <Appl />
 );
 
 // If you want to start measuring performance in your app, pass a function

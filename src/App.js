@@ -3,13 +3,13 @@ import './App.css';
 import { Button } from './stories/Button';
 import { Header } from './stories/Header';
 import { Card } from './stories/Card';
-import { Firebase } from '../src/firebase'
+import { Firebase } from '../src/firebase';
+import { db, auth } from './firebase';
 
 function App() {
   return (
 
     <div className="App">
-      <Header user={"Benjamin Caillet"}></Header>
       <div className='mainTitle'>
         <h1 >Bonjour, <br></br> I'm Benjamin 👋🏻</h1>
         <p>I use data to create delightful, human-centered experiences.</p>

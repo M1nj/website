@@ -41,3 +41,4 @@ Card.defaultProps = {
   whiteText: false,
 };
 
+export default Card;

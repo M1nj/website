@@ -3,21 +3,21 @@ import PropTypes from 'prop-types';
 import './button.css';
 
 
-export const Button = ({ type, label, ...props }) => {
+export const Button = ({ style, label, ...props }) => {
   return (
-    <button  className={['button', `button--${type}`].join(' ')}>
+    <button  className={['button', `button--${style}`].join(' ')}>
       {[`${label}`]}
     </button>
   )
 };
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['primary', 'secondary', 'text']),
+  style: PropTypes.oneOf(['primary', 'secondary', 'text']),
   label: PropTypes.string.isRequired,
 };
 
 Button.defaultProps = {
-  type: 'primary',
+  style: 'primary',
   label: 'Project Title',
 };
 

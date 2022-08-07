@@ -1,0 +1,102 @@
+@import '../../tokens.css';
+
+.contact{
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-template-rows: auto auto;
+    gap: 32px; 
+}
+.pageItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+}
+
+.pageItem > p{
+    font-size: 1.5em;
+    line-height: 40px;
+}
+
+ul > li{
+    font-size: 1.5em;
+    line-height: 48px;
+    font-family: 'Noto Sans';
+    font-weight: 300;
+}
+
+iframe{
+    border: none;
+}
+
+h2{
+    font-family: 'Noto Serif';
+}
+
+form{
+    text-align: left;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: var(--grey-100);
+}
+
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-height: 124px;
+}
+
+.inputArea{
+    border: solid 1px var(--grey-200);
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 8px;
+}
+
+.inputError{
+    color: red;
+}
+
+label , .inputError{
+    padding-bottom: 8px;
+    font-family: 'Noto Sans';
+}
+
+.name .inputDiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 24px;
+}
+
+.inputElement{
+    display: flex;
+    flex-direction: column;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+  }
+
+  .reminder:before {
+    content:" *";
+    color: red;
+  }
+.formFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formFooter button{
+ background-color: var(--blue);
+ color: white;
+ font-family: 'Noto Sans';
+ font-weight: bold;
+ text-transform: uppercase;
+}

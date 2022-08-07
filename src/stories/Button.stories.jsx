@@ -16,18 +16,18 @@ const Template = (args) => <Button {...args} />;
 
 export const primary = Template.bind({});
 primary.args = {
-  type: 'primary',
+  style: 'primary',
   label: 'Title',
 };
 
 export const secondary = Template.bind({});
 secondary.args = {
-  type: 'secondary',
+  style: 'secondary',
   label: 'Title',
 };
 
 export const text = Template.bind({});
 text.args = {
-  type: 'text',
+  style: 'text',
   label: 'Title',
 };

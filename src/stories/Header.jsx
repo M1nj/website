@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from "react-router-dom";
 import Contact from "../routes/contact";
+import { Outlet, Link } from "react-router-dom";
 
 import './header.css';
 
@@ -17,6 +17,7 @@ export const Header = ({ }) => (
         <a href='https://linkedin.com'>LinkedIn</a>
       </div>
     </div>
+    <Outlet />
   </header>
 );
 
