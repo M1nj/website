@@ -9,6 +9,8 @@
 .App {
   text-align: center;
   padding-bottom: 100px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .App-logo {

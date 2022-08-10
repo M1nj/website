@@ -11,7 +11,8 @@ const firebaseConfig = {
   storageBucket: "portfolio-ca0d4.appspot.com",
   messagingSenderId: "116541616268",
   appId: "1:116541616268:web:d219cd946f1cfbb3410ba9",
-  measurementId: "G-XSWVB86E3X"
+  measurementId: "G-XSWVB86E3X",
+  databaseURL: "https://<...>.firebaseio.com"
 };
 
 // Initialize Firebase
@@ -20,4 +21,3 @@ const analytics = getAnalytics(app);
 
 // Initialize Cloud Firestore and get a reference to the service
 export const db = getFirestore(app);
-
