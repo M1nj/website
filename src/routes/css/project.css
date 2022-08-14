@@ -16,3 +16,28 @@ h1{
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+.pageItem div p{
+    font-size: 1em;
+    line-height: 32px;
+}
+
+.roleTags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.roleTags .tag{
+    margin-right: var(--xs);
+    margin-bottom: var(--xs);
+}
+
+.previewImg{
+   height: 300px;
+   width: 100%;
+    object-fit: cover;
+    object-position: 10% 70% ;
+    border-radius: 16px;
+    padding-bottom: 50px;
+}

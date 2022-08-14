@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Test from './assets/test.png'
+import Test from './assets/projects/test.png'
 import { Title } from './Title';
 import { Link } from "react-router-dom";
 

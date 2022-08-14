@@ -10,6 +10,7 @@ import { insert } from 'formik';
 
 
 
+
 export default function About() {
 
   const getData = () => {
@@ -25,9 +26,6 @@ export default function About() {
         <div className="App">
             <div className='mainTitle contact'>
             <h1 >About 👤</h1>
-            <div className='pageItem'>
-              <img src="https://dummyimage.com/1000x400/000/fff"></img>
-            </div>
             <div className='pageItem'>
               <h2>About me</h2>
               <p>I am currently working for {getData()}, a design agency in Nantes as a UI / UX designer. 
