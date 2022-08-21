@@ -1,10 +1,14 @@
 import '../css/project.css';
 import { Tag } from "../../stories/Tag";
+import { Helmet } from 'react-helmet';
+
 
 export default function Mailbox() {
     return (
         <div className="App">
-          
+            <Helmet>
+              <title>Mailbox Finder - Benjamin Caillet</title>
+            </Helmet>
             <div className='mainTitle'>
             <img className='previewImg' src={require("../../stories/assets/projects/naturewise.png")}></img>
             <h1 >Mailbox Finder 📬</h1>

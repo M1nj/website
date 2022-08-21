@@ -23,7 +23,7 @@ button{
 }
 
 .button--primary:hover{
-  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.15);
+  box-shadow: 5px 5px 10px 0px var(--blue-opactiy);
 }
 
 .button--primary:active{

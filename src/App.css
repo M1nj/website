@@ -9,6 +9,9 @@
 .App {
   text-align: center;
   padding-bottom: 100px;
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-logo {
@@ -56,7 +59,6 @@
 
 .mainTitle h1{
   font-size: 3rem;
-  font-family: 'Noto Serif', sans-serif;
 }
 
 .mainTitle p{

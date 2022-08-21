@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 import './card.css';
 
-export const Card = ({ size, title, description, url, color, whiteText, ...props }) => {
+const Card = ({ size, title, description, url, color, whiteText, ...props }) => {
 
   return (
-    <Link to={url} className={[`card--${size}`].join(' ')}>
+    <a className={[`card--${size}`].join(' ')} href={url}>
     <div className={['card', `card--${size}`, `${color}`, `${whiteText}`].join(' ')}>
       <div className='cardContent'>
         <h3>{title}</h3>
@@ -19,7 +19,7 @@ export const Card = ({ size, title, description, url, color, whiteText, ...props
         <img src={Test}></img>
       </div>
     </div>
-    </Link>
+    </a>
   )
 };
 

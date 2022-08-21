@@ -57,9 +57,6 @@ height: 100%;
   
   .cardContent > p{
     font-size: 1rem;
-    word-wrap: break-word;
-    overflow: hidden;
-    max-height: 3.6em;
     line-height: 1.8em;
   }
 
@@ -92,11 +89,6 @@ height: 100%;
 
 .false{
   color: var(--black);
-}
-
-.card--Large .cardContent > p{
-  max-height: 5.4em;
-  line-height: 1.8em;
 }
 
 a{

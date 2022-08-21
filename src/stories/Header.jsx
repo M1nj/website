@@ -9,12 +9,12 @@ export const Header = ({name, props}) => (
   <header>
     <div className="wrapper">
       <div className='name'>
-        <Link to="../">{name}</Link>
+        <a href="/">{name}</a>
       </div>
       <div className='links'>
-        <Link to="./routes/about" >About</Link>
-        <Link to="./routes/contact">Contact</Link>
-        <a href='https://linkedin.com'>LinkedIn</a>
+        <a href="../routes/about" >About</a>
+        <a href="../routes/contact">Contact</a>
+        <a href='https://www.linkedin.com/in/benjamincaillet/'>LinkedIn</a>
       </div>
     </div>
     <Outlet />

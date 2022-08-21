@@ -1,12 +1,17 @@
 import '../css/project.css';
 import { Tag } from "../../stories/Tag";
+import Img from '../../stories/Img';
+import { Helmet } from 'react-helmet';
+
 
 export default function Naturewise() {
     return (
         <div className="App">
-          
+            <Helmet>
+              <title>NatureWise - Benjamin Caillet</title>
+            </Helmet>
             <div className='mainTitle'>
-            <img className='previewImg' src={require("../../stories/assets/projects/naturewise.png")}></img>
+            <Img url={require("../../stories/assets/projects/naturewise.png")}/>
             <h1 >NatureWise 🌱</h1>
             <div className="pageItem">
               <p className="description">
@@ -72,7 +77,7 @@ export default function Naturewise() {
               I chose a mobile-first approach knowing NatureWise would be primarily used by citizens on phones. I sketched out all the screens I needed on one specific journey (from the sign-up process to the profile page). Each time, I identified what design components I would need (like a form, a button...) to have a global idea of the component library I would have to create. Additionally, I spotted some core actions that a user could perform on a smartwatch (report something on the map or check their surrounding's pollution levels for instance). I also worked on the tablet version for my "Institution Personas" on one journey, you can have a sneak peek of it in the video below.
               </p>
             </div>
-            <iframe width="100%" height="535px" src="https://www.youtube.com/embed/OoE-D2Ie_eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="535px" src="https://www.youtube.com/embed/OoE-D2Ie_eo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </div>
     );

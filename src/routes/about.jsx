@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom';
 import { getDatabase, ref, onValue } from 'firebase/database';
 import { db2 } from '../firebase';
 import { insert } from 'formik';
-
+import { Helmet } from 'react-helmet';
 
 
 
@@ -24,6 +24,9 @@ export default function About() {
     getData()
     return (
         <div className="App">
+            <Helmet>
+              <title>About - Benjamin Caillet</title>
+            </Helmet>
             <div className='mainTitle contact'>
             <h1 >About 👤</h1>
             <div className='pageItem'>

@@ -14,23 +14,20 @@ import Naturewise from './routes/projects/naturewise';
 import About from './routes/about';
 import { Header } from './stories/Header';
 import Mailbox from './routes/projects/mailbox';
-
+import Card from './stories/Card';
 
 export default function Appl() {
   return (
-<React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Header />}>
-          <Route index element={<App />} />
-          <Route path="routes/contact" element={<Contact />}/>
-          <Route path="routes/about" element={<About />} />
-          <Route path="routes/project/naturewise" element={<Naturewise />} />
-          <Route path="routes/project/mailbox" element={<Mailbox />} />
-        </Route>
-      </Routes>
+    <Header/>
+    <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="routes/contact" element={<Contact />}/>
+        <Route path="routes/about" element={<About />} />
+        <Route path="routes/project/naturewise" element={<Naturewise />} />
+        <Route path="routes/project/mailbox" element={<Mailbox />} />
+    </Routes>
     </BrowserRouter>
-  </React.StrictMode>
     );
 }
 

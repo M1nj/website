@@ -5,6 +5,7 @@ import './css/contact.css';
 import { Button } from '../stories/Button';
 import { collection, addDoc } from "firebase/firestore"; 
 import { db } from "../firebase";
+import { Helmet } from "react-helmet";
 
 const addContact = async (values) => {
   try {
@@ -86,6 +87,9 @@ const SignupForm = () => {
 export default function Contact() {
     return (
         <div className="App">
+            <Helmet>
+              <title>Contact - Benjamin Caillet</title>
+            </Helmet>
             <div className='mainTitle contact'>
             <h1 >Contact 💬</h1>
             <div className='pageItem'>
