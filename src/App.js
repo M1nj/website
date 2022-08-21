@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import { Button } from './stories/Button';
-import { Header } from './stories/Header';
 import { Card } from './stories/Card';
 import { Firebase } from '../src/firebase';
 import { db, auth } from './firebase';

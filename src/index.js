@@ -13,8 +13,8 @@ import Contact from "./routes/contact";
 import Naturewise from './routes/projects/naturewise';
 import About from './routes/about';
 import { Header } from './stories/Header';
-import { Card } from './stories/Card';
 import Mailbox from './routes/projects/mailbox';
+
 
 export default function Appl() {
   return (
@@ -23,11 +23,11 @@ export default function Appl() {
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<App />} />
-          <Route path="routes/contact" element={<Contact />} />
+          <Route path="routes/contact" element={<Contact />}/>
           <Route path="routes/about" element={<About />} />
           <Route path="routes/project/naturewise" element={<Naturewise />} />
           <Route path="routes/project/mailbox" element={<Mailbox />} />
-      </Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -15,8 +15,3 @@ Tag.propTypes = {
   role: PropTypes.string.isRequired,
 }
 
-Tag.defaultProps = {
-
-  role: 'Default',
-};
-
